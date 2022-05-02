@@ -32,7 +32,7 @@ const changeRoom = (e) => {
   const geometry = new THREE.SphereGeometry( 500, 60, 40 );
   geometry.scale( - 1, 1, 1 );
   var material = new THREE.MeshBasicMaterial( {
-    map: new THREE.TextureLoader().load(`${e.target.innerText}.jpeg`),
+    map: new THREE.TextureLoader().load(`${e.target.innerText}.jpg`),
   } );
   const mesh = new THREE.Mesh( geometry, material );
   // remove previous mesh and add new
